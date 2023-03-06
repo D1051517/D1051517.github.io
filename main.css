@@ -34,7 +34,7 @@ body {
     height: 100px;
 }
 .bottom-right{
-    position: fixed;
+    position: absolute;
     bottom: 300px;
 }
 
