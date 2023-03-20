@@ -1,0 +1,40 @@
+body {
+    background-color: #1d2088;
+}
+.centered-text {
+    text-align: center;
+    line-height: 100px;
+    height: 200px;
+}
+.slogan {
+    float: left;
+    width: 50%;
+}
+.slogan h1 {
+    font-size: 5em;
+    margin-top: 10px;
+    color: white;
+    align-items: center;
+}
+.slogan p {
+    font-size: 4em;
+    color: white;
+}
+.social {
+    float: right;
+    width: 50%;
+    text-align: right;
+    margin-top: 80px;
+}
+.social a {
+    margin-right: 300px;
+}
+.social img {
+    width: 100px;
+    height: 100px;
+}
+.bottom-right{
+    position: absolute;
+    bottom: 300px;
+}
+
