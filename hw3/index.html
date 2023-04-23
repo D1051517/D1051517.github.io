@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<head>
+    <title>登入 - Google 帳戶</title>
+    <link rel="stylesheet" type="text/css" href="format.css">
+    <script>
+        function validateInput() {
+            var emailOrPhone = document.getElementById("emailOrPhone").value;
+            var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            var phoneRegex = /^\d{10}$/;
+            if (phoneRegex.test(emailOrPhone)) {
+                alert("找不到您的 Google 帳戶，請改為輸入電子郵件地址");
+            }else if(emailOrPhone === ""){
+                alert("請輸入電子郵件地址或電話號碼");
+            }else{
+                alert("HomeWook Down!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <div class="login_logo">
+                <img src="https://th.bing.com/th/id/OIP.SqEICC59PL1VrdefhGEqqgAAAA?pid=ImgDet&rs=1" width="90"  alt="google logo">
+            </div>
+            <div class="login_text">
+                <h2>登入</h2>
+                <h3>使用您的 Google 帳戶</h3>
+            </div>
+            <input class="input" type="text" id="emailOrPhone" style="width: 300px ;height: 50px" name="emailOrPhone" placeholder="電子郵件地址或電話號碼："><br><br>
+            <a href="https://reurl.cc/GeRDnv">忘記電子郵件地址?</a><br><br><br>
+            <label >如果這不是你的電腦，請使用私密瀏覽視窗登入</label><br>
+            <a href="https://reurl.cc/WDZW0Z">了解詳情</a><br><br><br>
+            <div class="last">
+                <button onclick="location.href='https://accounts.google.com/signup'" style="background-color: #4285F4; color: #fff; padding: 10px 20px; border-radius: 5px; border: none; cursor: pointer;">建立帳戶</button>
+                <button type="button" onclick="validateInput()" style="background-color: #4285F4; color: #fff; padding: 10px 20px; border-radius: 5px; border: none; cursor: pointer;">下一步</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
