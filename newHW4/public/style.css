@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: blanchedalmond;
+}
+
+/* 標題樣式 */
+.title {
+    text-align: center;
+    margin-top: 20px;
+
+}
+h1 {
+    font-size: 36px;
+    color: brown;
+    text-align: center;
+}
+form {
+    margin: 50px auto;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 3px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+/* 按鈕樣式 */
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgray;
+}
+table {
+    width: 100%;
+    margin-top: 50px;
+}
+
+thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+th,
+td {
+    padding: 20px;
+    text-align: center;
+    border-radius: 30px;
+    border: 0.5px solid blue;
+}
+
+th {
+    font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+    form {
+        padding: 10px;
+    }
+
+    input[type="text"] {
+        font-size: 14px;
+    }
+}
